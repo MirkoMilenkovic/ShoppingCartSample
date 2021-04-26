@@ -5,11 +5,11 @@
 Library contains:
 - Shopping cart model
 - Shopping cart interface and implementation. 
-- Intefaces of needed dependencies
+- Interfaces of needed dependencies
 - Default implementation of TotalDiscountCalculator, that is probably sufficient for most projects. 
-Shopping cart implementation is as "dumb" as possible. It handles it's own state. It delegates calculation of discounts to ITotalDiscountCalculator, 
+Shopping cart implementation is as "dumb" as possible. It handles its own state. It delegates calculation of discounts to ITotalDiscountCalculator, 
 which, in turn, depends on list of ISingleDiscountCalculator that comes from the Host. 
-Therefore, every project can define it's own discounts and way of applying them.
+Therefore, every project can define its own discounts and way of applying them.
 
 --DiscountPlugin--
 Contains implementations of ISingleDiscountCalculator that are specific to this project. Implementations are discovered at runtime by Host (in Host.Program.ConfigureServices),
