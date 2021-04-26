@@ -22,13 +22,8 @@ Contains:
 - DAL classes that implement repositories required by shopping cart
 - Discount plugin loader
 - Output preparation logic, for both console apps and HTML
-- Sample runner that tests simmulates user actions. Sample runner has configurable number of threads, to simulate multi user environment.
+- Sample runner that simulates user actions. Sample runner has configurable number of threads, to simulate multi user environment.
 
 ----How to read the code----
 Start from Host.Program.ConfigureServices. All "services" are injected into DI container there.
-Take note of namespaces. That will tell you where interfaces and their implemntations are defined, as well as their lifecycle.
-
-
-
-
-
+Take note of namespaces. That will tell you where interfaces and their implementations are defined, as well as their lifecycle.
